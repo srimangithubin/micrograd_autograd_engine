@@ -11,22 +11,14 @@
     1. For example, tensors (which Micrograd does not use) are employed to perform multiple scalar operations in parallel.
     2. Despite being a fundamental component of machine learning, Micrograd is surprisingly simple, consisting of only two Python files.
 
-### Derivative of a simple function
+### Derivative of a computation Graph and Building the Core Value Object of Micrograd and its Visualization
 
-* The derivative of a function represents the slope of the tangent line at a specific point or the rate of change of the function at that point.
-    1. Although Andrej assumes that we have taken a calculus class, he still provides a detailed explanation of what the derivative of a function is.
-
-    ![differentiability of a function](images/Differentiablility.png)
-
-    He uses the differentiability definition of a function to demonstrate how single and multi-variable inputs might affect a function's derivative.
-
-### Building the Core Value Object of Micrograd and its Visualization
 
 * Micrograd's core object is the Value object. It's a straightforward object with a value and a gradient. The gradient is the derivative of the value concerning the input of the function. The gradient is initialized to 0 and updated by the backward() function.
     1. Andrej walks through implementing the Value object and demonstrates how it performs computations with different operations we specify.
     2. He uses the Graphviz library to visualize the computation graph of the Value object, providing an excellent way to see the computation graph and understand how the gradient is computed.
 
-    ![Value object](images/Value.jpeg)
+ ![image](https://github.com/user-attachments/assets/147efbf7-3187-4b23-a824-01898fbb18b4)
 
 ### Backpropagation
 
