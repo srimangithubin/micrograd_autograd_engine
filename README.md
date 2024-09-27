@@ -7,7 +7,7 @@
         * Computes the neural network's output given an input and a set of weights
     2. Backpropagation
         * Calculates the gradient of the loss function with respect to the neural network's weights by computing the gradient of the loss function concerning the neural network's output and then computing the gradient of the output with respect to the neural network's weights. This process is performed recursively until the gradient of the loss function concerning the neural network's input is computed.
-* Andrej asserts that Micrograd is all you need to train neural networks, and the rest is added for efficiency and convenience. This is why understanding Micrograd is so crucial.
+* This Micrograd is all you need to train neural networks, and the rest is added for efficiency and convenience. This is why understanding Micrograd is so crucial.
     1. For example, tensors (which Micrograd does not use) are employed to perform multiple scalar operations in parallel.
     2. Despite being a fundamental component of machine learning, Micrograd is surprisingly simple, consisting of only two Python files.
 
@@ -34,9 +34,9 @@
 ### Putting it together
 
 * We implemented all necessary operations to perform forward and backpropagation with any operation (+, -, /, *, tanh).
-    1. Andrej emphasizes mastering the basics, so we explored derivative rules and dissected the tanh function into an equation using the hyperbolic tangent function.
+    1. This emphasizes mastering the basics, so we explored derivative rules and dissected the tanh function into an equation using the hyperbolic tangent function.
       - He demonstrated that regardless of how complicated the function we use is, as long as we correctly execute the forward pass and backpropagation, we can use any suitable function.
-* Andrej showed how PyTorch handles these operations using tensors, which allow for parallel computation of numerous scalar operations. Tensors are arrays of scalar values.
+* This showed how PyTorch handles these operations using tensors, which allow for parallel computation of numerous scalar operations. Tensors are arrays of scalar values.
 
 ### Building a neural net library (multi-layer perceptron)
 
@@ -46,8 +46,8 @@
 ### Training the neural net
 
 * We added parameters to the Neuron, Layer, and MLP classes and performed gradient descent on a small, makeshift dataset.
-    1. Andrej showed how easy it is to overstep the gradient descent and overshoot the minimum, which is what makes it a subtle art to get the right learning rate.
-    2. Andrej made the exact mistake he tweeted in 2018 to avoid, which was pretty funny and insightful. We need to .zero_grad() before .backward() to avoid accumulating gradients.
+    1. This showed how easy it is to overstep the gradient descent and overshoot the minimum, which is what makes it a subtle art to get the right learning rate.
+    2. This made the exact mistake he tweeted in 2018 to avoid, which was pretty funny and insightful. We need to .zero_grad() before .backward() to avoid accumulating gradients.
 
 ### Summary
 
