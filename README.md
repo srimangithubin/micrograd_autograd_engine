@@ -18,7 +18,7 @@
     1. Andrej walks through implementing the Value object and demonstrates how it performs computations with different operations we specify.
     2. He uses the Graphviz library to visualize the computation graph of the Value object, providing an excellent way to see the computation graph and understand how the gradient is computed.
 
- ![image](https://github.com/user-attachments/assets/147efbf7-3187-4b23-a824-01898fbb18b4)
+![image](https://github.com/user-attachments/assets/d9963f19-3777-48e8-a772-fbe0ae5c1824)
 
 ### Backpropagation
 
