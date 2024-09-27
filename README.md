@@ -15,8 +15,7 @@
 
 
 * Micrograd's core object is the Value object. It's a straightforward object with a value and a gradient. The gradient is the derivative of the value concerning the input of the function. The gradient is initialized to 0 and updated by the backward() function.
-    1. Andrej walks through implementing the Value object and demonstrates how it performs computations with different operations we specify.
-    2. He uses the Graphviz library to visualize the computation graph of the Value object, providing an excellent way to see the computation graph and understand how the gradient is computed.
+    1. USed Graphviz library to visualize the computation graph of the Value object, providing an excellent way to see the computation graph and understand how the gradient is computed.
 
 ![image](https://github.com/user-attachments/assets/d9963f19-3777-48e8-a772-fbe0ae5c1824)
 
